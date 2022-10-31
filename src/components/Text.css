@@ -1,0 +1,93 @@
+.text {
+  max-width: 100vw;
+  width: 55%;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.mainText {
+  max-width: 100vw;
+  width: 80%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.mainText h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2rem;
+  color: #cc9d9e;
+}
+
+.bold {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+
+.mainText p {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1.5rem;
+  color: hsl(0, 36%, 70%);
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    /*  position: absolute;
+    top: -450px; */
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    background: hsla(0, 80%, 86%, 0.1);
+  }
+
+  .mainText {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainText h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5.8rem 2rem 1rem;
+  }
+  .mainText .paragraph {
+    width: 75%;
+    margin-left: 3rem;
+    text-align: center;
+  }
+
+  .logo {
+    width: 110px;
+    margin: 0.4rem 1.4rem;
+  }
+
+  .imageMobile {
+    width: 100vw;
+    height: 22.5rem;
+    margin-top: 3rem;
+    background-image: url("../images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+}
