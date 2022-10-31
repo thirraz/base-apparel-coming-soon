@@ -54,7 +54,6 @@
     width: 100vw;
     height: 100%;
     align-items: center;
-    justify-content: center;
     background-image: none;
     background: hsla(0, 80%, 86%, 0.1);
   }
@@ -66,19 +65,20 @@
   }
 
   .mainText h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     margin: 5.8rem 2rem 1rem;
   }
   .mainText .paragraph {
-    width: 75%;
-    margin-left: 3rem;
+    width: 65%;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
 
   .logo {
     width: 110px;
-    margin: 0.4rem 1.4rem;
+    margin: 8rem 1.4rem 0.4rem;
   }
 
   .imageMobile {

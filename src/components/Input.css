@@ -5,10 +5,9 @@
 
 input[type="text"] {
   width: 100%;
-  min-width: 0.2rem;
   height: 2rem;
   border-radius: 40px;
-  border: none;
+  outline: none;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1.8rem;
@@ -46,6 +45,7 @@ button {
   transition: transform 100ms ease-in;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   outline: none;
+  cursor: pointer;
 }
 
 button:hover {
@@ -55,5 +55,21 @@ button:hover {
 @media screen and (max-width: 768px) {
   input[type="text"] {
     width: 80%;
+    display: block;
+    margin: 0 auto 5rem;
+  }
+
+  input[type="text"].error {
+    background-position: 220px 1rem;
+  }
+  button {
+    top: 0;
+    right: 2.9rem;
+  }
+
+  .errorMessage {
+    left: 5rem;
+    top: 5rem;
+    height: 200px;
   }
 }

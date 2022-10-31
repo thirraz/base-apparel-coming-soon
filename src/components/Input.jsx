@@ -8,15 +8,16 @@ export const Input = ({ type }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.match(/[0-9]/g)) {
-      console.log("Não é possível colocar números!");
+    if (form.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+      console.log("Valid Form!");
+    } else if (form == "") {
+      console.log("Input vazio");
+    } else {
       setError((s) => !s);
       setError("error");
     }
 
-    if (form == "") {
-      console.log("Input vazio");
-    }
+    setForm("");
   };
   return (
     <div className="inputContainer">
@@ -27,15 +28,14 @@ export const Input = ({ type }) => {
           placeholder="Email Address"
           onChange={(e) => setForm(e.target.value)}
         />
-        {/* {error ? (type = "error") : (type = "")} */}
         <button>
           <img src={arrowIcon} />
         </button>
-      </form>
 
-      {error ? (
-        <p className="errorMessage">Please provide a valid email</p>
-      ) : null}
+        {error ? (
+          <p className="errorMessage">Please provide a valid email!</p>
+        ) : null}
+      </form>
     </div>
   );
 };
